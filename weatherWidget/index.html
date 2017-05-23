@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title></title>
-
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="config.js"></script>
 	<script type="text/javascript" src="scripts.js">
 
@@ -12,21 +13,55 @@
 
 </head>
 <body>
-
-<form id="weather-form">
-	<label>Please Enter a zip code to search</label>
-	<input type="text" id="zip-code" placeholder="30324">
-	<button type="submit" class="btn btn-primary">Get the Weather!</button>
-</form>
-
-<div class="col-sm-12" id="temp-info">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4">
+				<form id="weather-form">
+					<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Enter a zip code to search</label>
+					<input type="text" id="zip-code" placeholder="30324">
+					<button type="submit" class="btn btn-primary">Get the Weather!</button>
+				</form>
+			</div>
+			<div class="col-sm-4">
+			</div>
+		</div>
+	</div>
+	<div class="row" id="rowTwo">
+		<div class="col-sm-12">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4" id="temp-info">
+			</div>
+			<div class="col-sm-4">
+			</div>
+		</div>
+	</div>
+	<div class="row" id="rowThree">
+		<div class="col-sm-12">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4" id="location-info">
+			</div>
+			<div class="col-sm-4">. 
+			</div>
+		</div>
+	</div>
+	<div class="row" id="rowFour">
+		<div class="col-sm-12">
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4" id="weather-image">
+			</div>
+			<div class="col-sm-4">. 
+			</div>
+		</div>
+	</div>
 
 </div>
 
-<canvas id="weather-canvas" height="500px" width="500px">
-
-
-</canvas>
 
 </body>
 </html>
