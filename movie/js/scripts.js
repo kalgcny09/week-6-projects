@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var nowPlayingHTML = '';
 		for(let i =0; i < nowPlayingData.results.length; i++){
 			var posterUrl = imageBaseUrl + 'w300' + nowPlayingData.results[i].poster_path;
-			nowPlayingHTML += '<div class="col-sm-3">';
+			nowPlayingHTML += '<div class="col-sm-4">';
 				nowPlayingHTML += `<img src="${posterUrl}">`;
 			nowPlayingHTML +=`</div>`;
 		}
@@ -27,18 +27,21 @@ $(document).ready(function(){
 
 
 		})
+
 	})
 
 	function getHTML(data) {
 	var newHTML = '';
 		for(let i =0; i < data.results.length; i++){
 			var posterUrl = imageBaseUrl + 'w300' + data.results[i].poster_path;
-			nowPlayingHTML += '<div class="col-sm-3">';
+			nowPlayingHTML += '<div class="col-sm-4">';
 				nowPlayingHTML += `<img src="${posterUrl}">`;
 			nowPlayingHTML +=`</div>`;
 		}
 
 	return newHTML
 	}
+
+
 })
 
